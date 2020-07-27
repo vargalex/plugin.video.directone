@@ -67,10 +67,10 @@ class Skylink:
     _api_url = ''
     _show_pin_protected = True
 
-    def __init__(self, username, password, storage_dir, provider='skylink.sk', show_pin_protected=True):
+    def __init__(self, username, password, storage_dir, provider='upcdirect.hu', show_pin_protected=True):
         self._provider = provider
-        self._lang = 'sk' if provider == 'skylink.sk' else 'cs'
-        self._app = 'slsk' if provider == 'skylink.sk' else 'slcz'
+        self._lang = 'hu'
+        self._app = 'upchu'
         self._usermane = username
         self._password = password
         self._storage_path = storage_dir
@@ -101,7 +101,7 @@ class Skylink:
                 raise UserNotDefinedException
 
             session = requests.Session()
-            resp = session.get('https://login.' + self._provider + '/authenticate',
+            resp = session.get('https://services.m7group.eu/External/login.' + self._provider + '/authenticate',
                                params={'redirect_uri': 'https://livetv.' + self._provider + '/auth.aspx',
                                        'state': self._time(),
                                        'response_type': 'code',
@@ -110,7 +110,7 @@ class Skylink:
                                        },
                                headers={'User-Agent': UA}
                                )
-            resp = session.post('https://login.' + self._provider + '/',
+            resp = session.post('https://services.m7group.eu/External/login.' + self._provider + '/',
                                 data={'Username': self._usermane, 'Password': self._password},
                                 headers={'User-Agent': UA, 'Referer': resp.url})
 

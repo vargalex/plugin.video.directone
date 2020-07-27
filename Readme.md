@@ -1,11 +1,24 @@
-# Skylink LiveTV CZ/SK
+# UPC Direct LiveTV HU
 
-Plugin generuje playlist a EPG pre službu Skylink LiveTV, pre použitie v IPTV Simple Client.
+#####ENG:
 
-Ako video doplnok zobrazuje aj archív služby Skylink.
+The plugin generates a playlist and EPG for the UPC Direct LiveTV service, for use in the IPTV Simple Client.
 
-V prípade nefunkčnosti generovania playlistu a epg (napr. z dôvodu chýbajúcich práv na zápis) je možné zobraziť Live stanice aj vo video doplnku.
+It also displays the UPC Direct archive as a video add-on.
 
-Od verzie 1.3.0 sa zobrazuje primárne ako video doplnok.
+In case of malfunction of playlist and epg generation (eg due to missing write rights), it is possible to display Live stations in the video plugin.
 
-Podpora je k dispozíci na webe [XBMC-Kodi.cz](https://www.xbmc-kodi.cz/prispevek-skylink-livetv-addon)
+Based on [Sorien's](https://github.com/Sorien/plugin.video.sl) Skylink plugin.
+
+
+
+#####HUN:
+
+A plugin lejátszási listát és EPG-t generál a UPC Direct LiveTV-hez az IPTV Simple Client számára,
+
+továbbá hozzáférést biztosít a videótárhoz is.
+
+Amennyiben a lejátszási lista és EPG generálás nem működik (pl.: hiányzó írási jog), az élő TV elérhető a video plugin-ból is.
+
+A plugin [Sorien's](https://github.com/Sorien/plugin.video.sl) Skylink pluginja alapján készült.
+

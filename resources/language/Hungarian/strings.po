@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Language: cz\n"
+"Language: hu\n"
 
 msgctxt "#30100"
 msgid "Account"
-msgstr "Účet"
+msgstr "Fiók"
 
 msgctxt "#30101"
 msgid "Provider"
-msgstr "Poskytovatel"
+msgstr "Szolgáltató"
 
 msgctxt "#30102"
 msgid "Email / Card number"
-msgstr "Číslo karty/Emailová adresa"
+msgstr "E-mail cím"
 
 msgctxt "#30103"
 msgid "Password"
-msgstr "Heslo"
+msgstr "Jelszó"
 
 msgctxt "#30111"
 msgid "Skylink SK"
@@ -29,19 +29,19 @@ msgstr "Skylink CZ"
 
 msgctxt "#30104"
 msgid "When no device is available use oldest"
-msgstr "Pokud není k dispozici žádné zařízení, použij nejstarší"
+msgstr "When no device is available use oldest"
 
 msgctxt "#30105"
 msgid "Limit devices list to web browser"
-msgstr "Omezit zařízení v seznamu pouze na prohlížeče"
+msgstr "Limit devices list to web browser"
 
 msgctxt "#30106"
 msgid "Generate and show pin protected channels"
-msgstr "Generovat a zobrazovat obsah chráněný PIN-em"
+msgstr "PIN-nel védett csatornák generálása és mutatása"
 
 msgctxt "#30200"
 msgid "Playlist"
-msgstr "Playlist"
+msgstr "Lejátszási lista"
 
 msgctxt "#30201"
 msgid "M3U"
@@ -49,19 +49,19 @@ msgstr "M3U"
 
 msgctxt "#30202"
 msgid "Directory of playlist"
-msgstr "Umístění playlistu"
+msgstr "Lejátszási lista elérési helye"
 
 msgctxt "#30203"
 msgid "Filename"
-msgstr "Název souboru"
+msgstr "Fájlnév"
 
 msgctxt "#30204"
-msgid "Logo urls directly from Skylink Live TV site"
-msgstr "Url adresy pro loga stanic přímo ze stránky Skylink Live TV"
+msgid "Logo urls directly from UPC Direct Live TV site"
+msgstr "Logo url-ek közvetlenül a UPC Direct Live TV oldaláról"
 
 msgctxt "#30205"
 msgid "Enabled M3U"
-msgstr "Generovat M3U"
+msgstr "M3U generálás"
 
 msgctxt "#30300"
 msgid "EPG"
@@ -73,99 +73,99 @@ msgstr "XMLTV"
 
 msgctxt "#30302"
 msgid "Enabled EPG"
-msgstr "Generovat EPG"
+msgstr "EPG generálás"
 
 msgctxt "#30303"
 msgid "Directory of EPG file"
-msgstr "Umístění EPG"
+msgstr "EPG elérési helye"
 
 msgctxt "#30304"
 msgid "Filename"
-msgstr "Název souboru"
+msgstr "Fájlnév"
 
 msgctxt "#30305"
 msgid "Preload Days"
-msgstr "Počet dní"
+msgstr "EPG napok"
 
 msgctxt "#30350"
 msgid "Archive"
-msgstr "Archiv"
+msgstr "Videótár"
 
 msgctxt "#30351"
-msgid "Logos directly from Skylink Live TV site"
-msgstr "Loga stanic přímo ze stránky Skylink Live TV"
+msgid "Logos directly from UPC Direct Live TV site"
+msgstr "Logók közvetlenül a UPC Direct Live TV oldaláról"
 
 msgctxt "#30352"
 msgid "Logos location"
-msgstr "Umístění pro loga"
+msgstr "Logók helye"
 
 msgctxt "#30353"
 msgid "local drive"
-msgstr "lokálně dostupné"
+msgstr "Helyi lemez"
 
 msgctxt "#30354"
 msgid "remote web"
-msgstr "web stránka"
+msgstr "Internetcím"
 
 msgctxt "#30355"
 msgid "Directory with logos"
-msgstr "Adresář s logy"
+msgstr "Logók könyvtára"
 
 msgctxt "#30356"
 msgid "Base url for logos"
-msgstr "Url stránky s logy"
+msgstr "Logóadatbázis URL-je"
 
 msgctxt "#30360"
 msgid "Live TV streams"
-msgstr "Zobrazit také živé vysílání"
+msgstr "Élő TV megjelenítése"
 
 msgctxt "#30361"
 msgid "Next programs in improvised EPG"
-msgstr "Počet programů v improvizovaném EPG"
+msgstr "Következő műsorok száma az "improvizált EPG-ben"
 
 msgctxt "#30370"
 msgid "Skins"
-msgstr "Vzhledy"
+msgstr "Skinek"
 
 msgctxt "#30371"
 msgid "Apply skin modification process"
-msgstr "Aplikuj modifikaci vzhledu"
+msgstr "Skin módosítás indítása"
 
 msgctxt "#30372"
 msgid "Please read this whole.\nNow a duplicate of your active skin will be created with a modification of the menu on the TV section, removing the recordings and timers (which are not supported for this plugin) and adding a direct link to the archive.\nOnly Estuary and Confluence skins are supported.\nThis is an experimental function. I recommend Kodi restart before and after using it."
-msgstr "Přečtěte to prosím celé.\nNyní se vytvoří duplikát vašeho aktivního vzhledu s modifikací menu v TV části, ze které odstraní nahrávky a časovače (které nejsou pro tento plugin podporované) a přidá přímý odkaz na archiv.\nPodporovány jsou jenom vzhledy Estuary a Confluence.\nToto je experimenální funkce. Před i po jejím použití doporučuji udělat restart Kodi."
+msgstr "Please read this whole.\nNow a duplicate of your active skin will be created with a modification of the menu on the TV section, removing the recordings and timers (which are not supported for this plugin) and adding a direct link to the archive.\nOnly Estuary and Confluence skins are supported.\nThis is an experimental function. I recommend Kodi restart before and after using it."
 
 msgctxt "#30373"
 msgid "Skin not supported"
-msgstr "Nepodporovaný vzhled"
+msgstr "Skin nem támogatott"
 
 msgctxt "#30374"
 msgid "Only Estuary and Confluence skins are supported."
-msgstr "Podporovány jsou pouze vzhledy Estuary a Confluence."
+msgstr "Csak az Estuary és a Confluence skinek támogatottak."
 
 msgctxt "#30375"
 msgid "Skin duplicate already exists, you must uninstall it first!"
-msgstr "Duplikát vzhledu již existuje, je nutné jej nejprve odinstalovat!"
+msgstr "A skin egy másolata már létezik amit először törölnöd kell!"
 
 msgctxt "#30376"
 msgid "Also copy the settings of the active skin?"
-msgstr "Zkopírovat i nastavení aktivního vzhledu?"
+msgstr "Aktív skin beállításainak másolása?"
 
 msgctxt "#30377"
 msgid "An error has occurred during process, modification is not possible."
-msgstr "Vznikla chyba při aplikaci, modifikace není možná."
+msgstr "A folyamat közben hiba lépett fel. A módosítás nem lehetséges."
 
 msgctxt "#30378"
 msgid "Process was successful, should I set a new skin?"
-msgstr "Aplikace byla úspěšná, mám nastavit nový vzhled?"
+msgstr "Folyamat sikeres. Skin használata?"
 
 msgctxt "#30379"
 msgid "Failed to set a new skin, do it manually."
-msgstr "Nelze nastavit nový vzhled, udělejte to ručně."
+msgstr "Skin beállítása sikertelen, próbáld manuálisan."
 
 msgctxt "#30380"
 msgid "Failed to activate the new skin, do it manually, and then set it."
-msgstr "Nepodařilo se aktivovat nový vzhled, udělejte to manuálně a pak si ho nastavte."
+msgstr "Skin aktiválása sikertelen, próbáld manuálisan utána állítsd be."
 
 msgctxt "#30390"
 msgid "PVR IPTV Simple Client"
@@ -173,167 +173,167 @@ msgstr "PVR IPTV Simple Client"
 
 msgctxt "#30391"
 msgid "Setup PVR IPTV Simple Client"
-msgstr "Nastavení PVR IPTV Simple Client"
+msgstr "PVR IPTV Simple Client beállítása"
 
 msgctxt "#30392"
 msgid "You do not have installed PVR IPTV Simple Client"
-msgstr "Nemáte nainstalovanej PVR IPTV Simple Client"
+msgstr "A PVR IPTV Simple Client nincs telepítve"
 
 msgctxt "#30393"
 msgid "You have neither generation of playlist nor EPG enabled."
-msgstr "Nemáte zapnuté generování ani playlistu, ani EPG."
+msgstr "Sem a lejátszási lista, sem az EPG generálása nincs engedélyezve."
 
 msgctxt "#30394"
 msgid "It will now display a dialog with the necessary restart several times. Then restart Kodi.\nI also recommend deleting data in Settings / PVR and TV - General.\nOnly start after you have generated a playlist or epg!\nThis process is irreversible, continue?"
-msgstr "Nyní zobrazí několikrát po sobě dialog s nutným restartem. Poté restartujte Kodi.\nNásledně doporučuji i vymazat údaje v Nastavení / PVR a televize - Všeobecné.\nSpusťte až poté, co máte vygenerovaný playlist resp. epg!\nTento proces je nevratný, pokračovat?"
+msgstr "Újraindításra figyelmeztető párbeszédablakok fognak megjelenni. Ha nem jön elő több, indítsd újra a Kodit.\nJavaslom az adatok törlését a Beállítások / PVR & Live TV / Általános menüben.\nCsak sikeres lejátszási lista vagy EPG generálás után indítsd el a folyamatot!\nA folyamat visszafordíthatatlan. Folytatás?"
 
 msgctxt "#30401"
-msgid "Playlist created"
-msgstr "Playlist byl vytvořen"
+msgid "M3U Playlist created"
+msgstr "M3U lejátszási lista elkészítve"
 
 msgctxt "#30402"
-msgid "Playlist and EPG created"
-msgstr "Playlist a EPG bylo vytvořeno"
+msgid "M3U Playlist and EPG created"
+msgstr "M3U lejátszási lista és EPG elkészítve"
 
 msgctxt "#30501"
 msgid "User name or password is not defined"
-msgstr "Přístupové údaje nejsou nastaveny!"
+msgstr "A felhasználónév vagy a jelszó üres"
 
 msgctxt "#30502"
 msgid "User name or password is not valid"
-msgstr "Přístupové údaje nejsou správné!"
+msgstr "A felhasználónév vagy a jelszó helytelen"
 
 msgctxt "#30503"
 msgid "M3U playlist can't be created"
-msgstr "M3U playlist nemůže být vytvořen"
+msgstr "M3U lejátszási lista nem hozható létre"
 
 msgctxt "#30504"
 msgid "EPG file can't be created"
-msgstr "EPG soubor nemůže být vytvořen"
+msgstr "EPG fájl nem hozható létre"
 
 msgctxt "#30505"
-msgid "Too many Skylink LiveTV connections"
-msgstr "Přihlášených příliš mnoho zařízení"
+msgid "Too many UPC Direct LiveTV connections"
+msgstr "Túl sok csatlakozott eszköz"
 
 msgctxt "#30506"
 msgid "Internet connection error"
-msgstr "Internetové spojení není dostupné"
+msgstr "Internetkapcsolat hiba"
 
 msgctxt "#30507"
 msgid "There are no web devices to choose!"
-msgstr "Nejsou k dispozici žádné prohlížeče na výběr!"
+msgstr "There are no web devices to choose!"
 
 msgctxt "#30508"
 msgid "Enter your PIN code:"
-msgstr "Zadejte svůj PIN kód:"
+msgstr "Üsse be a PIN kódját:"
 
 msgctxt "#30509"
 msgid "Nope!"
-msgstr "Špatný PIN!"
+msgstr "Nope!"
 
 msgctxt "#30510"
 msgid "Stream is not available!"
-msgstr "Stream není k dispozici!"
+msgstr "Stream nem elérhető!"
 
 msgctxt "#30600"
 msgid "Archive"
-msgstr "Archiv"
+msgstr "Videótár"
 
 msgctxt "#30601"
 msgid "today"
-msgstr "dnes"
+msgstr "ma"
 
 msgctxt "#30602"
 msgid "yesterday"
-msgstr "včera"
+msgstr "tegnap"
 
 msgctxt "#30603"
 msgid "the day after"
-msgstr "následující den"
+msgstr "következő nap"
 
 msgctxt "#30604"
 msgid "the day before"
-msgstr "předešlý den"
+msgstr "előző nap"
 
 msgctxt "#30610"
 msgid "monday"
-msgstr "pondělí"
+msgstr "hétfő"
 
 msgctxt "#30611"
 msgid "tuesday"
-msgstr "úterý"
+msgstr "kedd"
 
 msgctxt "#30612"
 msgid "wednesday"
-msgstr "středa"
+msgstr "szerda"
 
 msgctxt "#30613"
 msgid "thursday"
-msgstr "čtvrtek"
+msgstr "csütörtök"
 
 msgctxt "#30614"
 msgid "friday"
-msgstr "pátek"
+msgstr "péntek"
 
 msgctxt "#30615"
 msgid "saturday"
-msgstr "sobota"
+msgstr "szombar"
 
 msgctxt "#30616"
 msgid "sunday"
-msgstr "neděle"
+msgstr "vasárnap"
 
 msgctxt "#30700"
 msgid "Live TV"
-msgstr "Živé vysílání TV"
+msgstr "Élő TV"
 
 msgctxt "#30800"
 msgid "Library (alpha)"
-msgstr "Knihovna (alfa)"
+msgstr "Könyvtár (alpha)"
 
 msgctxt "#30801"
 msgid "Movies"
-msgstr "Filmy"
+msgstr "Filmek"
 
 msgctxt "#30802"
 msgid "Series"
-msgstr "Seriály"
+msgstr "Sorozatok"
 
 msgctxt "#30803"
 msgid "Play"
-msgstr "Přehrát"
+msgstr "Lejátszás"
 
 msgctxt "#30804"
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Mégse"
 
 msgctxt "#30805"
 msgid "Can't play this item, you probably don't have a paid service for it."
-msgstr "Tuto položku nelze přehrát, pravděpodobně pro ni nemáte placenou službu."
+msgstr "Nem játszható le, valószínűleg nem vagy előfizetve rá."
 
 msgctxt "#30806"
 msgid "Unknown error, sorry."
-msgstr "Neznáma chyba, sorry."
+msgstr "Ismerelen hiba. Bocsi."
 
 msgctxt "#30807"
 msgid "Season"
-msgstr "Sezóna"
+msgstr "Évad"
 
 msgctxt "#30810"
 msgid "Action"
-msgstr "Akční"
+msgstr "Akció"
 
 msgctxt "#30811"
 msgid "Comedy"
-msgstr "Komedie"
+msgstr "Vígjáték"
 
 msgctxt "#30812"
 msgid "Family"
-msgstr "Rodinný"
+msgstr "Családi"
 
 msgctxt "#30813"
 msgid "Kids"
-msgstr "Dětský"
+msgstr "Gyerek"
 
 msgctxt "#30814"
 msgid "Science Fiction"
@@ -345,19 +345,19 @@ msgstr "Fantasy"
 
 msgctxt "#30816"
 msgid "Adventure"
-msgstr "Dobrodružný"
+msgstr "Kaland"
 
 msgctxt "#30817"
 msgid "Crime"
-msgstr "Kriminální"
+msgstr "Krimi"
 
 msgctxt "#30818"
 msgid "Drama"
-msgstr "Drama"
+msgstr "Dráma"
 
 msgctxt "#30819"
 msgid "Romance"
-msgstr "Romantika"
+msgstr "Romantikus"
 
 msgctxt "#30820"
 msgid "Thriller"
@@ -369,28 +369,28 @@ msgstr "Horror"
 
 msgctxt "#30822"
 msgid "Documentary"
-msgstr "Dokumentární"
+msgstr "Dokumentum"
 
 msgctxt "#30823"
 msgid "Biography"
-msgstr "Životopisný"
+msgstr "Életrajzi"
 
 msgctxt "#30824"
 msgid "History"
-msgstr "Historický"
+msgstr "Történelem"
 
 msgctxt "#30825"
 msgid "Music"
-msgstr "Hudební"
+msgstr "Zene"
 
 msgctxt "#30826"
 msgid "Sport"
-msgstr "Sportovní"
+msgstr "Sport"
 
 msgctxt "#30827"
 msgid "Other"
-msgstr "Ostatní"
+msgstr "Egyéb"
 
 msgctxt "#30828"
 msgid "Erotic"
-msgstr "Erotický"
+msgstr "Erotikus"
