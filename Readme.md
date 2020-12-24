@@ -1,6 +1,6 @@
 # UPC Direct LiveTV HU
 
-#####ENG:
+##### ENG:
 
 The plugin generates a playlist and EPG for the UPC Direct LiveTV service, for use in the IPTV Simple Client.
 
@@ -12,7 +12,7 @@ Based on [Sorien's](https://github.com/Sorien/plugin.video.sl) Skylink plugin.
 
 
 
-#####HUN:
+##### HUN:
 
 A plugin lejátszási listát és EPG-t generál a UPC Direct LiveTV-hez az IPTV Simple Client számára,
 
