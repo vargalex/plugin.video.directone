@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sl" version="1.6.6" name="UPC direct Live TV" provider-name="Pityke1105, Sorien, cache-sk">
+<addon id="plugin.video.sl" version="1.7.1" name="UPC direct Live TV" provider-name="Pityke1105, Sorien, cache-sk">
 <requires>
   <import addon="xbmc.python" version="2.26.0"/>
   <import addon="script.module.requests" version="2.18.4"/>
@@ -17,6 +17,16 @@
   <license>MIT</license>
   <source>https://github.com/Pityke1105/plugin.video.sl</source>
   <news>
+[B]1.7.1[/B]
+- generating epg into the past for catchup, default 0
+- Matrix skin blocking
+- enable skipping for the first three minutes when using "play from here" in the classic archive, default true
+- categories in the library
+[B]1.7.0[/B]
+- support for Kodi 19, including catchup, thanks to panda7789
+[B]1.6.7[/B]
+- category generation fix in EPG
+- fix url on session previews
 [B]1.6.6 UPC Direct HU[/B]
 - Identical with 1.6.6 but modified to UPC Direct Live TV (HU) instead of Skylink (CZ/SK)
 - Slovakian and czech localization removed, hungarian added

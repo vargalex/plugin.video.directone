@@ -39,4 +39,6 @@ def set_pisc():
         _pisc.setSetting('logoBaseUrl','')
         _pisc.setSetting('logoFromEpg','2')
 
+    xbmcgui.Dialog().ok(_self.getAddonInfo('name'), _self.getLocalizedString(30395))
+
 set_pisc()
