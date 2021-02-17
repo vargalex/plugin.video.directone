@@ -56,8 +56,8 @@ msgid "Filename"
 msgstr "Filename"
 
 msgctxt "#30204"
-msgid "Logo urls directly from UPC Direct Live TV site"
-msgstr "Logo urls directly from UPC Direct Live TV site"
+msgid "Logo urls directly from Direct One Live TV site"
+msgstr "Logo urls directly from Direct One Live TV site"
 
 msgctxt "#30205"
 msgid "Enabled M3U"
@@ -96,8 +96,8 @@ msgid "Archive"
 msgstr "Archive"
 
 msgctxt "#30351"
-msgid "Logos directly from UPC Direct Live TV site"
-msgstr "Logos directly from UPC Direct Live TV site"
+msgid "Logos directly from Direct One Live TV site"
+msgstr "Logos directly from Direct One Live TV site"
 
 msgctxt "#30352"
 msgid "Logos location"
@@ -228,7 +228,7 @@ msgid "EPG file can't be created"
 msgstr "EPG file can't be created"
 
 msgctxt "#30505"
-msgid "Too many UPC Direct LiveTV connections"
+msgid "Too many Direct One LiveTV connections"
 msgstr "Too many active devices"
 
 msgctxt "#30506"

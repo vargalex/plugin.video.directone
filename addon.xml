@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sl" version="1.7.1" name="UPC direct Live TV" provider-name="Pityke1105, Sorien, cache-sk">
+<addon id="plugin.video.sl" version="1.7.2" name="Direct One Live TV" provider-name="Pityke1105, Sorien, cache-sk">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
   <import addon="script.module.requests" version="2.18.4"/>
@@ -11,12 +11,14 @@
 <extension point="xbmc.service" library="service.py"/>
 <extension point="xbmc.addon.metadata">
   <reuselanguageinvoker>true</reuselanguageinvoker>
-  <summary lang="en">UPC Direct Live TV Addon</summary>
-  <description lang="en">PVR playlist and EPG generator for UPC Direct Live TV Service</description>
-  <description lang="hu_hu">PVR lejátszási lista és EPG generátor UPC Direct Live TV-hez</description>
+  <summary lang="en">Direct One Live TV Addon</summary>
+  <description lang="en">PVR playlist and EPG generator for Direct One Live TV Service</description>
+  <description lang="hu_hu">PVR lejátszási lista és EPG generátor Direct One Live TV-hez</description>
   <license>MIT</license>
   <source>https://github.com/Pityke1105/plugin.video.sl</source>
   <news>
+[B]1.7.2 Direct One HU[/B]
+- Direct one modifications
 [B]1.7.1[/B]
 - generating epg into the past for catchup, default 0
 - Matrix skin blocking
@@ -30,7 +32,7 @@
 [B]1.6.6 UPC Direct HU[/B]
 - Identical with 1.6.6 but modified to UPC Direct Live TV (HU) instead of Skylink (CZ/SK)
 - Slovakian and czech localization removed, hungarian added
-- Operator selection (Skylink CZ or Skylink SK) removed, UPC direct is hard-coded
+- Operator selection (Skylink CZ or Skylink SK) removed, Direct One is hard-coded
 [B]1.6.6[/B]
 - pridanie seriesNo/episodeNo do xmltv
 [B]1.6.5[/B]

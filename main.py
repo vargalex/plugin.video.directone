@@ -17,7 +17,7 @@ _addon = xbmcaddon.Addon()
 _profile = utils.dec_utf8(xbmc.translatePath(_addon.getAddonInfo('profile')))
 _user_name = xbmcplugin.getSetting(_id, 'username')
 _password = xbmcplugin.getSetting(_id, 'password')
-_provider = 'upcdirect.hu'
+_provider = 'directone.hu'
 _pin_protected_content = 'false' != xbmcplugin.getSetting(_id, 'pin_protected_content')
 _a_show_live = 'false' != xbmcplugin.getSetting(_id, 'a_show_live')
 _python3 = sys.version_info[0] >= 3

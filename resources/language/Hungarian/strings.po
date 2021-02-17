@@ -56,8 +56,8 @@ msgid "Filename"
 msgstr "Fájlnév"
 
 msgctxt "#30204"
-msgid "Logo urls directly from UPC Direct Live TV site"
-msgstr "Logo url-ek közvetlenül a UPC Direct Live TV oldaláról"
+msgid "Logo urls directly from Direct One Live TV site"
+msgstr "Logo url-ek közvetlenül a Direct One Live TV oldaláról"
 
 msgctxt "#30205"
 msgid "Enabled M3U"
@@ -96,8 +96,8 @@ msgid "Archive"
 msgstr "Videótár"
 
 msgctxt "#30351"
-msgid "Logos directly from UPC Direct Live TV site"
-msgstr "Logók közvetlenül a UPC Direct Live TV oldaláról"
+msgid "Logos directly from Direct One Live TV site"
+msgstr "Logók közvetlenül a Direct One Live TV oldaláról"
 
 msgctxt "#30352"
 msgid "Logos location"
@@ -228,7 +228,7 @@ msgid "EPG file can't be created"
 msgstr "EPG fájl nem hozható létre"
 
 msgctxt "#30505"
-msgid "Too many UPC Direct LiveTV connections"
+msgid "Too many Direct One LiveTV connections"
 msgstr "Túl sok csatlakozott eszköz"
 
 msgctxt "#30506"

@@ -58,7 +58,7 @@ class SkylinkMonitor(xbmc.Monitor):
         _username = self._addon.getSetting('username')
         _password = self._addon.getSetting('password')
         _profile = xbmc.translatePath(self._addon.getAddonInfo('profile'))
-        _provider = 'upcdirect.hu'
+        _provider = 'directone.hu'
         _pin_protected_content = 'false' != self._addon.getSetting('pin_protected_content')
         sl = skylink.Skylink(_username, _password, _profile, _provider, _pin_protected_content)
         logger.log.info('SL created')
