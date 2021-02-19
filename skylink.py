@@ -70,7 +70,7 @@ class Skylink:
     def __init__(self, username, password, storage_dir, provider='directone.hu', show_pin_protected=True):
         self._provider = provider
         self._lang = 'hu'
-        self._app = 'directonehu'
+        self._app = 'upchu'
         self._usermane = username
         self._password = password
         self._storage_path = storage_dir
