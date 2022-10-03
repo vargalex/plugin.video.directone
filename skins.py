@@ -14,9 +14,9 @@ import random
 SKINS = {'skin.estuary':'Estuary','skin.confluence':'Confluence'}
 
 def cleanup(copy_settings, destination, destsettings):
-    shutil.rmtree(xbmc.translatePath(destination))
+    shutil.rmtree(xbmcvfs.translatePath(destination))
     if copy_settings:
-        shutil.rmtree(xbmc.translatePath(destsettings))
+        shutil.rmtree(xbmcvfs.translatePath(destsettings))
 
 def modify():
     __language__ = xbmcaddon.Addon(id='plugin.video.sl').getLocalizedString
@@ -45,7 +45,7 @@ def modify():
         copy_settings = False
     
     try:
-        shutil.copytree(xbmc.translatePath('special://skin'), xbmc.translatePath(destination))
+        shutil.copytree(xbmcvfs.translatePath('special://skin'), xbmcvfs.translatePath(destination))
         #alter copy addon.xml
         with closing(xbmcvfs.File(destination + '/addon.xml')) as f:
             addonxml = f.read()
@@ -55,7 +55,7 @@ def modify():
             f.write(addonxml)
         if copy_settings:
             #TODO special://profile
-            shutil.copytree(xbmc.translatePath('special://userdata/addon_data/' + skin), xbmc.translatePath(destsettings))
+            shutil.copytree(xbmcvfs.translatePath('special://userdata/addon_data/' + skin), xbmcvfs.translatePath(destsettings))
 
         #update language
         enpo = destination + '/language/resource.language.en_gb/strings.po'
