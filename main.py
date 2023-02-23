@@ -11,10 +11,11 @@ import live
 import library
 import utils
 import datetime
+import xbmcvfs
 
 _id = int(sys.argv[1])
 _addon = xbmcaddon.Addon()
-_profile = utils.dec_utf8(xbmc.translatePath(_addon.getAddonInfo('profile')))
+_profile = utils.dec_utf8(xbmcvfs.translatePath(_addon.getAddonInfo('profile')))
 _user_name = xbmcplugin.getSetting(_id, 'username')
 _password = xbmcplugin.getSetting(_id, 'password')
 _provider = 'directone.hu'

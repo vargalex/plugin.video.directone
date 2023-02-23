@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.sl" version="1.7.2" name="Direct One Live TV" provider-name="Pityke1105, Sorien, cache-sk">
+<addon id="plugin.video.sl" version="1.7.3" name="Direct One Live TV" provider-name="Pityke1105, Sorien, cache-sk">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
   <import addon="script.module.requests" version="2.18.4"/>
@@ -17,6 +17,8 @@
   <license>MIT</license>
   <source>https://github.com/Pityke1105/plugin.video.sl</source>
   <news>
+[B]1.7.3 Direct One HU[/B]
+- Nexus compatibility
 [B]1.7.2 Direct One HU[/B]
 - Direct one modifications
 [B]1.7.1[/B]

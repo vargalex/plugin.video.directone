@@ -9,7 +9,7 @@ import skylink
 import xbmc
 import xbmcaddon
 import utils
-
+import xbmcvfs
 
 class SkylinkMonitor(xbmc.Monitor):
     _addon = None
@@ -57,7 +57,7 @@ class SkylinkMonitor(xbmc.Monitor):
 
         _username = self._addon.getSetting('username')
         _password = self._addon.getSetting('password')
-        _profile = xbmc.translatePath(self._addon.getAddonInfo('profile'))
+        _profile = xbmcvfs.translatePath(self._addon.getAddonInfo('profile'))
         _provider = 'directone.hu'
         _pin_protected_content = 'false' != self._addon.getSetting('pin_protected_content')
         sl = skylink.Skylink(_username, _password, _profile, _provider, _pin_protected_content)

@@ -1,0 +1,8 @@
+# Visual Studio Code local directory
+.vscode
+# PyCharm local directory
+.idea
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
