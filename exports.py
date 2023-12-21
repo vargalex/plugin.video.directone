@@ -95,12 +95,12 @@ def create_epg(channels, epg, path):
                         file.write("<desc>%s</desc>\n" % html_escape(p["description"]))
                     if "cover" in p:
                         file.write('<icon src="%s"/>\n' % html_escape(p["cover"]))
-                    if len(p.get("genres", [])) > 0:
+                    if p.get("genres") and len(p["genres"]) > 0:
                         file.write(
                             "<category>%s</category>\n"
                             % html_escape(", ".join(p["genres"]))
                         )
-                    if len(p.get("credits", []) > 0):
+                    if p.get("credits") and len(p["credits"]) > 0:
                         file.write("<credits>\n")
                         for cr in p["credits"]:
                             if "p" in cr:

@@ -388,8 +388,11 @@ class Skylink:
                 }
 
             for data in epg_info:
-                data["description"] = data.get("description", "...").strip()
-                if "cover" in data:
+                if not data.get("description"):
+                    data["description"] = "..."
+                else:
+                    data["description"] = data["description"].strip()
+                if data.get("cover"):
                     # url in web page - https://m7cz.solocoo.tv/m7cziphone/mmchan/mpimages/447x251/_hash_.jpg
                     # url in data - mmchan/mpimages/_hash_.jpg
                     data["cover"] = M7_API_URL + data["cover"].replace(
