@@ -35,7 +35,7 @@ def create_m3u(channels, path, logo_url=None):
 
         for c in channels:
             catchup_url = (
-                "plugin://plugin.video.sl/?stationid=%s&askpin=%s&catchup_id={catchup-id}"
+                "plugin://plugin.video.directone/?stationid=%s&askpin=%s&catchup_id={catchup-id}"
                 % (c["stationid"], c["pin"])
             )
             catchup = (
@@ -57,7 +57,8 @@ def create_m3u(channels, path, logo_url=None):
                 )
             )
             file.write(
-                "plugin://plugin.video.sl/?id=%s&askpin=%s\n" % (c["id"], c["pin"])
+                "plugin://plugin.video.directone/?id=%s&askpin=%s\n"
+                % (c["id"], c["pin"])
             )
 
 

@@ -22,7 +22,7 @@ def cleanup(copy_settings, destination, destsettings):
 
 
 def modify():
-    __language__ = xbmcaddon.Addon(id="plugin.video.sl").getLocalizedString
+    __language__ = xbmcaddon.Addon(id="plugin.video.directone").getLocalizedString
     if not xbmcgui.Dialog().yesno(xbmc.getLocalizedString(19194), __language__(30372)):
         return
 
@@ -140,9 +140,9 @@ def modify():
                 + "\t\t\t<label>$LOCALIZE["
                 + newId
                 + "]</label>\n"
-                + "\t\t\t<onclick>ActivateWindow(10025,plugin://plugin.video.sl/?replay=channels,return)</onclick>\n"
-                + "\t\t\t<thumb>special://home/addons/plugin.video.sl/icon-archive.png</thumb>\n"
-                + "\t\t\t<visible>System.HasAddon(plugin.video.sl)</visible>\n"
+                + "\t\t\t<onclick>ActivateWindow(10025,plugin://plugin.video.directone/?replay=channels,return)</onclick>\n"
+                + "\t\t\t<thumb>special://home/addons/plugin.video.directone/icon-archive.png</thumb>\n"
+                + "\t\t\t<visible>System.HasAddon(plugin.video.directone)</visible>\n"
                 + "</item>\n\t\t"
             )
             content.insert(index, newItem)
@@ -193,8 +193,8 @@ def modify():
                 + "\t\t\t<label>"
                 + newId
                 + "</label>\n"
-                + "\t\t\t<onclick>ActivateWindow(10025,plugin://plugin.video.sl/?replay=channels,return)</onclick>\n"
-                + "\t\t\t<visible>System.HasAddon(plugin.video.sl)</visible>\n"
+                + "\t\t\t<onclick>ActivateWindow(10025,plugin://plugin.video.directone/?replay=channels,return)</onclick>\n"
+                + "\t\t\t<visible>System.HasAddon(plugin.video.directone)</visible>\n"
                 "</control>\n\t\t"
             )
             content.insert(index, newControl)
@@ -245,7 +245,7 @@ python3 = sys.version_info[0] >= 3
 if python3:
     xbmcgui.Dialog().ok(
         "Kodi 19 Matrix",
-        xbmcaddon.Addon(id="plugin.video.sl").getLocalizedString(30381),
+        xbmcaddon.Addon(id="plugin.video.directone").getLocalizedString(30381),
     )
 else:
     modify()

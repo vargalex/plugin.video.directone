@@ -8,7 +8,7 @@ import xbmcgui
 
 
 def set_pisc():
-    _self = xbmcaddon.Addon(id="plugin.video.sl")
+    _self = xbmcaddon.Addon(id="plugin.video.directone")
     try:
         _pisc = xbmcaddon.Addon(id="pvr.iptvsimple")
     except:

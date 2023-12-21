@@ -36,10 +36,10 @@
     </category>
     <category label="30390">
         <setting label="30390" type="lsep"/>
-        <setting label="30391" type="action" action="RunScript(special://home/addons/plugin.video.sl/pisc.py)"/>
+        <setting label="30391" type="action" action="RunScript(special://home/addons/plugin.video.directone/pisc.py)"/>
     </category>
     <category label="30370">
         <setting label="30370" type="lsep"/>
-        <setting label="30371" type="action" action="RunScript(special://home/addons/plugin.video.sl/skins.py)"/>
+        <setting label="30371" type="action" action="RunScript(special://home/addons/plugin.video.directone/skins.py)"/>
     </category>
 </settings>
