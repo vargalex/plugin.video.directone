@@ -1,21 +1,25 @@
 # -*- coding: utf-8 -*-
 # Author: cache-sk
 # Created on: 15.4.2019
+import os
+
+import requests
 import xbmcaddon
 import xbmcgui
-import skylink
+
 import exports
-import requests
 import logger
-import os
+import skylink
 
 try:
     # Python 3.x
-    from urllib.parse import parse_qs as comp_parse_qs, urlencode as comp_urlencode
+    from urllib.parse import parse_qs as comp_parse_qs
+    from urllib.parse import urlencode as comp_urlencode
 except ImportError:
     # Python 2.5+
-    from urlparse import parse_qs as comp_parse_qs
     from urllib import urlencode as comp_urlencode
+
+    from urlparse import parse_qs as comp_parse_qs
 
 
 _addon = xbmcaddon.Addon()

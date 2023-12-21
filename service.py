@@ -1,15 +1,17 @@
-import sys
 import datetime
 import os
+import sys
 import time
+
 import requests
+import xbmc
+import xbmcaddon
+import xbmcvfs
+
 import exports
 import logger
 import skylink
-import xbmc
-import xbmcaddon
 import utils
-import xbmcvfs
 
 
 class SkylinkMonitor(xbmc.Monitor):

@@ -2,13 +2,15 @@
 # Author: cache-sk
 # Created on: 20.8.2019
 import sys
+import urllib
+from collections.abc import Mapping
+
 import inputstreamhelper
 import xbmcaddon
 import xbmcgui
 import xbmcplugin
-import urllib
+
 import utils
-from collections.abc import Mapping
 from skylink import StreamNotResolvedException
 
 _url = sys.argv[0]

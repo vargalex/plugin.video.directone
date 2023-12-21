@@ -2,8 +2,9 @@
 # Author: cache-sk
 # Created on: 21.10.2019
 import os
-import xbmcgui
+
 import xbmcaddon
+import xbmcgui
 
 
 def set_pisc():

@@ -1,4 +1,5 @@
 import logging
+
 import xbmc
 import xbmcaddon
 

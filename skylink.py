@@ -8,9 +8,9 @@ import uuid
 import requests.cookies
 
 try:
-    from urlparse import urlparse, unquote, parse_qs  # 3.x
+    from urlparse import parse_qs, unquote, urlparse  # 3.x
 except ImportError:
-    from urllib.parse import urlparse, unquote, parse_qs  # 2.7
+    from urllib.parse import parse_qs, unquote, urlparse  # 2.7
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
 M7_DOMAIN = "m7cz.solocoo.tv"
@@ -388,8 +388,7 @@ class Skylink:
                 }
 
             for data in epg_info:
-                if "description" in data:
-                    data["description"] = data["description"].strip()
+                data["description"] = data.get("description", "...").strip()
                 if "cover" in data:
                     # url in web page - https://m7cz.solocoo.tv/m7cziphone/mmchan/mpimages/447x251/_hash_.jpg
                     # url in data - mmchan/mpimages/_hash_.jpg

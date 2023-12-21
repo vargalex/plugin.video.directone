@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 # Author: cache-sk
 # Created on: 12.6.2019
-import xbmc
-import xbmcgui
-import xbmcaddon
-import shutil
-import xbmcvfs
-from contextlib import closing
-import xml.etree.ElementTree as ET
-import time
 import random
+import shutil
+import time
+import xml.etree.ElementTree as ET
+from contextlib import closing
+
+import xbmc
+import xbmcaddon
+import xbmcgui
+import xbmcvfs
 
 SKINS = {"skin.estuary": "Estuary", "skin.confluence": "Confluence"}
 
