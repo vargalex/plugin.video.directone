@@ -11,6 +11,7 @@ import xbmcaddon
 import utils
 import xbmcvfs
 
+
 class SkylinkMonitor(xbmc.Monitor):
     _addon = None
     _next_update = 0
@@ -18,19 +19,29 @@ class SkylinkMonitor(xbmc.Monitor):
     def __init__(self):
         xbmc.Monitor.__init__(self)
         self._addon = xbmcaddon.Addon()
-        ts = self._addon.getSetting('next_update')
-        self._next_update = datetime.datetime.now() if ts == '' else datetime.datetime.fromtimestamp(float(ts))
+        ts = self._addon.getSetting("next_update")
+        self._next_update = (
+            datetime.datetime.now()
+            if ts == ""
+            else datetime.datetime.fromtimestamp(float(ts))
+        )
 
     def __del__(self):
-        logger.log.info('service destroyed')
+        logger.log.info("service destroyed")
 
     def notify(self, text, error=False):
-        icon = 'DefaultIconError.png' if error else ''
+        icon = "DefaultIconError.png" if error else ""
         try:
             text = text.encode("utf-8") if type(text) is unicode else text
-            xbmc.executebuiltin('Notification("%s","%s",5000,%s)' % (self._addon.getAddonInfo('name').encode("utf-8"), text, icon))
+            xbmc.executebuiltin(
+                'Notification("%s","%s",5000,%s)'
+                % (self._addon.getAddonInfo("name").encode("utf-8"), text, icon)
+            )
         except NameError as e:
-            xbmc.executebuiltin('Notification("%s","%s",5000,%s)' % (self._addon.getAddonInfo('name'), text, icon))
+            xbmc.executebuiltin(
+                'Notification("%s","%s",5000,%s)'
+                % (self._addon.getAddonInfo("name"), text, icon)
+            )
 
     def onSettingsChanged(self):
         self._addon = xbmcaddon.Addon()  # refresh for updated settings!
@@ -44,35 +55,39 @@ class SkylinkMonitor(xbmc.Monitor):
 
     def schedule_next(self, seconds):
         dt = datetime.datetime.now() + datetime.timedelta(seconds=seconds)
-        logger.log.info('Next update %s' % dt)
+        logger.log.info("Next update %s" % dt)
         self._next_update = dt
 
     def update(self, try_reconnect=False):
         result = -1
 
-        _playlist_generate = 'true' == self._addon.getSetting('playlist_generate')
-        _epg_generate = 'true' == self._addon.getSetting('epg_generate')
+        _playlist_generate = "true" == self._addon.getSetting("playlist_generate")
+        _epg_generate = "true" == self._addon.getSetting("epg_generate")
         if not _playlist_generate and not _epg_generate:
             return result
 
-        _username = self._addon.getSetting('username')
-        _password = self._addon.getSetting('password')
-        _profile = xbmcvfs.translatePath(self._addon.getAddonInfo('profile'))
-        _provider = 'directone.hu'
-        _pin_protected_content = 'false' != self._addon.getSetting('pin_protected_content')
-        sl = skylink.Skylink(_username, _password, _profile, _provider, _pin_protected_content)
-        logger.log.info('SL created')
+        _username = self._addon.getSetting("username")
+        _password = self._addon.getSetting("password")
+        _profile = xbmcvfs.translatePath(self._addon.getAddonInfo("profile"))
+        _provider = "directone.hu"
+        _pin_protected_content = "false" != self._addon.getSetting(
+            "pin_protected_content"
+        )
+        sl = skylink.Skylink(
+            _username, _password, _profile, _provider, _pin_protected_content
+        )
+        logger.log.info("SL created")
 
         try:
             channels = sl.channels()
         except skylink.TooManyDevicesException as e:
-            if self._addon.getSetting('reuse_last_device') == 'true':
+            if self._addon.getSetting("reuse_last_device") == "true":
                 device = utils.get_last_used_device(e.devices)
             else:
-                device = utils.select_device(e.devices) if try_reconnect else ''
+                device = utils.select_device(e.devices) if try_reconnect else ""
 
-            if device != '':
-                logger.log.info('reconnecting as: ' + device)
+            if device != "":
+                logger.log.info("reconnecting as: " + device)
                 sl.reconnect(device)
                 channels = sl.channels()
             else:
@@ -80,10 +95,15 @@ class SkylinkMonitor(xbmc.Monitor):
 
         if _playlist_generate:
             try:
-                path = os.path.join(self._addon.getSetting('playlist_folder'), self._addon.getSetting('playlist_file'))
-                _skylink_logos = 'true' == self._addon.getSetting('sl_logos')
-                logger.log.info('Updating playlist [%d channels]' % len(channels))
-                exports.create_m3u(channels, path, sl._api_url if _skylink_logos else None)
+                path = os.path.join(
+                    self._addon.getSetting("playlist_folder"),
+                    self._addon.getSetting("playlist_file"),
+                )
+                _skylink_logos = "true" == self._addon.getSetting("sl_logos")
+                logger.log.info("Updating playlist [%d channels]" % len(channels))
+                exports.create_m3u(
+                    channels, path, sl._api_url if _skylink_logos else None
+                )
                 result = 1
             except IOError as e:
                 logger.log.error(str(e))
@@ -91,13 +111,20 @@ class SkylinkMonitor(xbmc.Monitor):
 
         if _epg_generate:
             try:
-                days = int(self._addon.getSetting('epg_days'))
-                catchup_days = int(self._addon.getSetting('epg_days_catchup'))
+                days = int(self._addon.getSetting("epg_days"))
+                catchup_days = int(self._addon.getSetting("epg_days_catchup"))
                 today = datetime.datetime.now()
-                epgFrom = today - datetime.timedelta(days=catchup_days) if catchup_days > 0 else today
+                epgFrom = (
+                    today - datetime.timedelta(days=catchup_days)
+                    if catchup_days > 0
+                    else today
+                )
                 epgTo = today + datetime.timedelta(days=days)
-                path = os.path.join(self._addon.getSetting('epp_folder'), self._addon.getSetting('epg_file'))
-                logger.log.info('Updating EPG [from %s to %s]' % (epgFrom, epgTo))
+                path = os.path.join(
+                    self._addon.getSetting("epp_folder"),
+                    self._addon.getSetting("epg_file"),
+                )
+                logger.log.info("Updating EPG [from %s to %s]" % (epgFrom, epgTo))
                 exports.create_epg(channels, sl.epg(channels, epgFrom, epgTo), path)
                 result = 2
             except IOError as e:
@@ -115,17 +142,19 @@ class SkylinkMonitor(xbmc.Monitor):
                 pass
             except requests.exceptions.ConnectionError:
                 self.schedule_next(60)
-                logger.log.info('Can''t update, no internet connection')
+                logger.log.info("Can" "t update, no internet connection")
                 pass
             except skylink.SkylinkException as e:
                 self.notify(self._addon.getLocalizedString(e.id), True)
 
     def save(self):
-        self._addon.setSetting('next_update', str(time.mktime(self._next_update.timetuple())))
-        logger.log.info('Saving next update %s' % self._next_update)
+        self._addon.setSetting(
+            "next_update", str(time.mktime(self._next_update.timetuple()))
+        )
+        logger.log.info("Saving next update %s" % self._next_update)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     monitor = SkylinkMonitor()
     while not monitor.abortRequested():
         if monitor.waitForAbort(10):

@@ -5,11 +5,11 @@ import xbmcaddon
 
 class XBMCHandler(logging.StreamHandler):
     xbmc_levels = {
-        'DEBUG': 0,
-        'INFO': 2,
-        'WARNING': 3,
-        'ERROR': 4,
-        'LOGCRITICAL': 5,
+        "DEBUG": 0,
+        "INFO": 2,
+        "WARNING": 3,
+        "ERROR": 4,
+        "LOGCRITICAL": 5,
     }
 
     def emit(self, record):
@@ -21,7 +21,7 @@ def _get_logger():
     logger = logging.getLogger(xbmcaddon.Addon().getAddonInfo("id"))
     logger.setLevel(logging.DEBUG)
     handler = XBMCHandler()
-    handler.setFormatter(logging.Formatter('[%(name)s] %(message)s'))
+    handler.setFormatter(logging.Formatter("[%(name)s] %(message)s"))
     logger.addHandler(handler)
     return logger
 
