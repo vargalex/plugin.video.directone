@@ -138,6 +138,11 @@ def play(sl, lid, stationid, askpin):
             playitem.setProperty("inputstream.adaptive.manifest_type", info["protocol"])
             playitem.setProperty("inputstream.adaptive.license_type", info["drm"])
             playitem.setProperty("inputstream.adaptive.license_key", info["key"])
+            try:
+                playitem.setProperty('inputstream.adaptive.stream_headers', info["path"].split("|")[1])
+                playitem.setProperty('inputstream.adaptive.manifest_headers', info["path"].split("|")[1])
+            except:
+                pass
             xbmcplugin.setResolvedUrl(_handle, True, playitem)
 
 

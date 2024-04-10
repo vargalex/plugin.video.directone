@@ -273,6 +273,11 @@ def play(sl, lid):
                 )
                 playitem.setProperty("inputstream.adaptive.license_type", info["drm"])
                 playitem.setProperty("inputstream.adaptive.license_key", info["key"])
+                try:
+                    playitem.setProperty('inputstream.adaptive.stream_headers', info["path"].split("|")[1])
+                    playitem.setProperty('inputstream.adaptive.manifest_headers', info["path"].split("|")[1])
+                except:
+                    pass
 
                 if "subs" in data:
                     params = {"z": "subtitle", "lng": sl._lang, "id": lid}
